@@ -16,8 +16,7 @@ import getpass
 import argparse
 
 
-de = os.environ.get('DESKTOP_SESSION')
-if de != "" and 'kde' in os.environ.get('DESKTOP_SESSION'):  # kde init qwidget for wallet access
+if os.environ.has_key('DESKTOP_SESSION') and 'kde' in os.environ.get('DESKTOP_SESSION'):  # kde init qwidget for wallet access
     from PySide.QtGui import QApplication
     App = QApplication
 else:
