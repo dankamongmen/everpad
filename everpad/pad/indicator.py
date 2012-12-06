@@ -259,7 +259,7 @@ def main():
     parser.add_argument('--create', action='store_true', help='create new note')
     parser.add_argument('--all-notes', action='store_true', help='show all notes window')
     parser.add_argument('--settings', action='store_true', help='settings and management')
-    parser.add_argument('--replace', action='store_true', help='replace already runned')
+    parser.add_argument('--replace', action='store_true', help='replace running instance')
     parser.add_argument('--version', '-v', action='store_true', help='show version')
     args = parser.parse_args(sys.argv[1:])
     if args.version:
