@@ -10,7 +10,6 @@ def get_files():
     for package in packages:
         path = package.replace('.', '/')
         files.append((
-            os.path.join('/opt/extras.ubuntu.com/everpad/', path),
             filter(lambda name: not (name[-4:] == '.pyc' or os.path.isdir(name)),
                 map(lambda name: os.path.join(path, name), 
             os.listdir(path))),
